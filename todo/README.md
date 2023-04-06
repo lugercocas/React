@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Usando Material Design mediante Maretial-UI
-npm install @mui/material @emotion/react @emotion/styled
-npm install @mui/material @mui/styled-engine-sc styled-components
-npm install @fontsource/roboto
-npm install @mui/icons-material
+npm install @mui/material @emotion/react @emotion/styled.
+npm install @mui/material @mui/styled-engine-sc styled-components.
+npm install @fontsource/roboto.
+npm install @mui/icons-material.
