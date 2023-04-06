@@ -1,0 +1,22 @@
+.Task {
+    background-color: antiquewhite;
+    border-radius: 10px 10px;
+    text-align: justify;
+    /* text-decoration-line: line-through; */
+}
+.AlingBttnTask {
+    text-align: right;
+    width: max-content;
+}
+.Icon-check--active {
+    text-decoration-line: line-through;
+}
+
+.Disabled-btn {
+    cursor: not-allowed;
+    color: darkgrey;
+}
+.color-disabled {
+    color: gray;
+    cursor: not-allowed;
+}

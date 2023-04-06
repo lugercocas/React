@@ -1,0 +1,16 @@
+.NewTask {
+    text-align: center;
+    background-color: #80D8FF;
+    color: black;
+    border-radius: 10px 50px;
+    padding: 3px;
+    margin: 3px;
+}
+.ManageTask {
+    text-align: center;
+    background-color: #84FFFF;
+    color: black;
+    border-radius: 10px 50px;
+    padding: 3px;
+    margin: 3px;
+}
