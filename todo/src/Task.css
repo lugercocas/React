@@ -10,6 +10,7 @@
 }
 .Icon-check--active {
     text-decoration-line: line-through;
+    color:rgb(164, 225, 71);
 }
 
 .Disabled-btn {

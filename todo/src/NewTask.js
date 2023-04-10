@@ -7,6 +7,9 @@ import Image from './todolist-icon.jpg'
 
 
 function NewTask(){
+  const onNewTask = ()=>{
+    alert("Se está creando una nueva tarea.")
+  };
     return (
         <React.Fragment>
             <h1><span className="material-icons">&#xf23a;</span> Crear Nueva Tarea</h1>
@@ -16,7 +19,9 @@ function NewTask(){
                 </Grid>
                 <Grid xs={2}>
                 <Fab color="secundary" aria-label="add">
-                    <span className="material-icons">&#xe145;</span>
+                    <span className="material-icons"
+                      onClick={onNewTask}
+                    >&#xe145;</span>
                 </Fab>      
                 </Grid>  
               </Grid>
