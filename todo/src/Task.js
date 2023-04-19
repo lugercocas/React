@@ -5,12 +5,8 @@ import {AlertTitle} from "@mui/material";
 import "./Task.css"
 
 function Task(props){
-    const onComplete = () =>{
-        alert("El TODO "+props.text+" ha sido completado.")
-    };
-    const onDelete = () =>{
-        alert("El TODO "+props.text+" ha sido eliminado.")
-    };
+    const onComplete = props.onComplete;
+    const onDelete = props.onDelete;
     const onEdit = () =>{
         alert("El TODO "+props.text+" se va a editar.")
     };
@@ -23,23 +19,28 @@ function Task(props){
                 <br />
                 <div className="AlingBttnTask">
                     {/* Delete */}
-                    <Fab color="error" aria-label="error">
-                    <span className="material-icons"
-                        onClick={onDelete}
-                    >&#xe872;</span>
+                    <Fab 
+                        color="error" 
+                        aria-label="error" 
+                        onClick={()=>onDelete(props.text)}
+                    >
+                    <span className="material-icons">&#xe872;</span>
                     </Fab>
                     {/* Completed */}
-                    <Fab aria-label="success" color="success">
-                            <span className="material-icons"
-                                onClick={onComplete}
-                            >&#xe2e6;</span>
+                    <Fab 
+                        aria-label="success" 
+                        color="success"
+                        onClick={()=>onComplete(props.text)}
+                    >
+                        <span className="material-icons">&#xe2e6;</span>
                     </Fab>
                     {/* Edit */}
-                    <Fab color="warning" aria-label="success">
-                            <span 
-                                className="material-icons"
-                                onClick={onEdit}
-                            >&#xe745;</span>
+                    <Fab 
+                        color="warning" 
+                        aria-label="success"
+                        onClick={onEdit}
+                    >
+                        <span className="material-icons">&#xe745;</span>
                     </Fab>
                 </div>               
             </Alert>   
